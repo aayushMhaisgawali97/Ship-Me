@@ -1,0 +1,138 @@
+body {
+    background-color: #F8F4E3;
+}
+
+/* Nav-bar */
+.container-fluid img {
+    height: 50px;
+    margin-left: 70px;
+}
+
+.nav-item1 {
+    padding-left: 250px;
+    padding-right: 35px;
+}
+
+.nav-item2 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#nav-item3 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#active-item1, #active-item2, #active-item3 {
+    color: white;
+}
+
+.container-fluid {
+    background-color: black;
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* Card */
+
+.cards-container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card {
+    width: calc(50% - 32px);
+    min-width: 300px;
+    max-width: 450px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    height: auto;
+    max-height: 380px;  /* Increased from 220px */
+    object-fit: contain;
+    display: block;
+}
+
+.card-body {
+    padding: 1.5rem;  /* Increased padding */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.3rem;  /* Slightly larger */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    flex-grow: 1;  /* Allows text to fill available space */
+}
+
+.stars {
+    color: #ffd700;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;  /* Larger padding */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: auto;  /* Pushes button to bottom */
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+.text-body-secondary {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 1.2rem;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .card-img-top {
+        max-height: 300px;
+    }
+}
